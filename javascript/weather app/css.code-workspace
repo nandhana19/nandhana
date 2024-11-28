@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../css"
+		},
+		{
+			"path": "../../Demo"
+		},
+		{
+			"path": "../../table"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "javascript"
+	}
+}

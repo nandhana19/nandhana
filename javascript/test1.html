@@ -1,0 +1,48 @@
+DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="text">Hello JSPIDERS Welcome To Web Class</h1>
+    <textarea id="input" cols="70" rows="10"></textarea>
+    <h1 id="time">0 : 00</h1>
+    <script>
+        let textTag = document.getElementById("text")
+        let input = document.querySelector("#input")
+        let timeTag = document.getElementById("time")
+
+        let text = textTag.innerHTML
+
+        let interval;
+
+        let millisec = 0
+
+        input.addEventListener("input", (event) => {
+            let value = event.target.value
+            if (!interval) {
+                interval = setInterval(startTimer, 10)
+            }
+            if (value == text) {
+                clearInterval(interval)
+                alert("THE TEXTS ARE MATCHED")
+            }
+        })
+        function startTimer() {
+            millisec = millisec + 10
+            let msec = Math.trunc(millisec % 1000)
+            let sec = Math.trunc(millisec / 1000 % 60)
+            let min = Math.trunc(millisec / 1000 / 60)
+            timeTag.innerHTML = sec < 10 ? ${min} : 0${sec} :${msec} : ${min} : ${sec} : ${msec}
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.btn
+{
+    background-color: black;
+}
+.btn-color
+{
+    color: white;
+}
+.btn-border
+{
+    border: 2px solid red;
+}

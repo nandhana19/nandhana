@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Task</title>
+    <style>
+        .container
+        {
+            height: 500px;
+            width: 400px;
+            border-radius: 20px;
+            box-shadow:0px 0px 20px black ;
+            margin:100px auto;
+            border: 3px solid black;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .img
+        {
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+            transition: all 2s linear 0s;
+
+
+        }
+      
+        .slide
+        {
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+            background-color: orange;
+            position: absolute;
+            top:0px;
+            transition: all 5s ease 0s;
+        }
+        .container:hover>img
+        {
+            transform: scale(1.5);
+        }
+        .container:hover>.slide
+{
+        transform: translateY(-1300px);
+}
+        </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg">
+       
+        <div class="slide"></div>
+    </div>
+</body>
+</html>
